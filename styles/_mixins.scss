@@ -1,0 +1,33 @@
+@mixin mobile () {
+    @media screen and (max-width:992px){
+        @content;
+    }
+}
+//*header*//
+@mixin flex_nav() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex_navbar() {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin responsive-sm() {
+    @media screen and (max-width:900px) {
+        @content;
+    }
+}
+@mixin responsive-mid() {
+    @media screen and (max-width:1200px) {
+        @content;
+    }
+}
+//*section one*//
+@mixin flex-wrap() {
+    display: flex;
+    flex-wrap: wrap;
+}
